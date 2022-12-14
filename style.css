@@ -1,0 +1,101 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav li {
+    margin-left: 15px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .utile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .utile ul {
+    list-style: none;
+  }
+  
+  .utile li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .utile a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .utile h1 {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+  
+  .utile h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 0;
+  }
+  
+  .liens {
+    margin-top: 20px;
+  }
+  
+  .liens button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  
+  .liens a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .liens p {
+    margin-top: 20px;
+    font-size: 14px
+  }
+
+      
+
+.div3{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 2fr;
+   
+}
+.div4 { grid-area: 4 / 1 / 5 / 2; 
+    margin: 0;
+    text-align: center;
+}
+.div5 { grid-area: 5 / 1 / 6 / 2; 
+    margin: 0;
+    text-align: center;
+}
