@@ -7,8 +7,182 @@ body {
   font-family: 'Times New Roman',  sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+
+.header{
+  background: rgb(8, 8, 57);
+  position: sticky;
+  top: 0;
+  height: 12%;
+  width: 100%;
+}
+
+.logo{
+  display: inline-block;
+  font-size: 50px;
+  margin-left: 25px;
+}
+.nav{
+  width: 100vw;
+  height: 60%;
+  position: fixed;
+  overflow: hidden;
+
+}
+.menu a{
+  
+  display: inline-block;
+  padding: 30px;
+  color:white;
+
+}
+.menu a:hover{
+  background-color: black;
+
+  padding: 7px;
+  border: none;
+ ;
+}
+.nav{
+  max-height: 0;
+  transition: max-height .5s ease-out;
+  
+}
+.hamb{
+ 
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px;
+}
+
+.hamb-line {
+  background: black;
+  display: block;
+  height: 2px;
+  position: relative;
+  margin-right: 30px;
+  width: 24px;
+
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+  background: black;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.hamb-line::before{
+  top: 5px;
+}
+.hamb-line::after{
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+} 
+.side-menu:checked ~ nav{
+  max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top:0;
+}
+ 
+@media (min-width: 768px) {
+  .nav{
+      max-height: none;
+      top: 0;
+      position: relative;
+      float: right;
+      width: fit-content;
+      background-color: transparent;
+  }
+  .menu li{
+      float: left;
+  }
+  .menu a:hover{
+      background-color: goldenrod;
+      padding: 7px;
+      border: none;
+
+
+  }
+
+  .hamb{
+      display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .nav {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(19, 19, 78);
@@ -95,6 +269,84 @@ body {
   margin-right: 50px;
   width: 250px;
   border: 1px solid black;
+}
+@media screen and (max-width: 600px) {
+  .nav li:nth-child(n+5) {
+    display: none;
+  }
+  .nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav ul li {
+    display: block;
+    width: 100%;
+  }
+  
+  .nav ul li a {
+    display: block;
+    padding: 12px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .nav ul li a:hover {
+    background-color: #eee;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 }
 
 
