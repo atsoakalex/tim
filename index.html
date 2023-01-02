@@ -12,31 +12,39 @@
 </head>
 <body>
     <header>
-        <nav class="nav">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn"></label>
-            <i class="fas fa-bars"></i>
-            <label class="logo"></label>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+                <a href="#"><img src="./image/logo.png" alt="Logo"></a>
+                <a href="#"><strong>Britannica</strong></a>
+                <a href="#"><img src="./image/burger.png" alt="menu_berge"></a>
+                <a href="#">Browse</a>
+                <a href="#"><img src="./image/loupe.png" alt="loupe"></a>
+                <a href="#">Search</a>
+                <a href="#">Dictionary</a>
+                <a href="#">Quizzes</a>
+                <a href="#">Money</a>
+                
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
             
-            <ul>
-                <li><a href="#"><img src="./image/logo.png" alt="Logo"></a></li>
-                <li><a href="#"><strong>Britannica</strong></a></li>
-                <li><a href="#"><img src="./image/burger.png" alt="menu_berge"></a></li>
-                <li><a href="#">Browse</a></li> 
-                <li><a href="#"><img src="./image/loupe.png" alt="loupe"></a></li>
-                <li><a href="#">Search</a></li> 
-                <li><a href="#">Dictionary</a></li> 
-                <li><a href="#">Quizzes</a></li> 
-                <li><a href="#">Money</a></li> 
-                <li><button>Subscribe</button></li>
-                <li><a href="#">Login</a></li>  
-                <li><a href="#"><img src="./image/arrowd.png" alt="arrow_down"></a></li>
+            <div class="nav-links">
+                <button class="btn">Subscribe</button>
+                <a href="#">Login</a> 
+                <a href="#"><img src="./image/arrowd.png" alt="arrow_down"></a>
                 
-                         
-                         
-                
-            </ul>
-        </nav>
+            </div>
+          </div>
+
+
     </header>
     <div class="utile"> 
         
@@ -45,9 +53,22 @@
             <a href="#">Mathematics</a>
        
     </div>
-    <div class="container">
+    <div class="container ">
         <div class="col">
             <div class="box">
+                <div id="liens">
+                    <h1>Tim Berners-Lee</h1>
+                    <h2>British Scientist</h2>
+                    <button><a href=""><i class="fas fa-print"></i> print </a></button>
+                    <button><a href=""><i class="fas fa-check-circle"></i> cite </a></button>
+                    <button><a href=""><i class="fas fa-share-alt"></i> share </a></button>
+                    <button><a href=""><i class="far fa-comment-alt-lines"></i> feedback </a></button>
+                    <button><a href=""><i class="fas fa-ellipsis-v"></i></a></button>
+                    
+                    <p><em>Alternatives title: Site Tim berners-Lee</em><br> 
+                    By <strong><a href="#">Michael Aaron Dennis</a></strong>. Last updated: 2, 2022* Edit History
+                    </p>
+                </div>
 
 
                         <div class="profile">
@@ -69,24 +90,11 @@
             </div>           
 
         </div>
-
-
+        
 
         <div class="col">
 
-                        <div id="liens">
-                            <h1>Tim Berners-Lee</h1>
-                            <h2>British Scientist</h2>
-                            <button><a href=""><i class="fas fa-print"></i> print </a></button>
-                            <button><a href=""><i class="fas fa-check-circle"></i> cite </a></button>
-                            <button><a href=""><i class="fas fa-share-alt"></i> share </a></button>
-                            <button><a href=""><i class="far fa-comment-alt-lines"></i> feedback </a></button>
-                            <button><a href=""><i class="fas fa-ellipsis-v"></i></a></button>
-                            
-                            <p><em>Alternatives title: Site Tim berners-Lee</em><br> 
-                            By <strong><a href="#">Michael Aaron Dennis</a></strong>. Last updated: 2, 2022* Edit History
-                            </p>
-                        </div>
+                       
                         <div class="div4"> 
                             <p>
                                 Tim Berners-Lee, in full Sir Tim Berners-Lee, (born <br>June 8, 1955, <a href="#">London</a>, England), British computer<br> scientist,
@@ -102,6 +110,7 @@
                                 Ltd., located in <a href="#">Poole</a>, Dorset, <a href="#">England</a>. Following<br> this, he had several positions in the computer industry,<br>including a stint from June to December 1980 as a <br>software engineering consultant at CERN, the <br>European particle physics laboratory in Geneva.
                             </p>
                         </div>
+                        
                 
         </div>
        

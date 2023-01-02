@@ -4,625 +4,13 @@
 
 body {
   margin: 0px;
-  font-family: 'Times New Roman',  sans-serif;
-}
-
-a{
-  text-decoration: none;
-}
-ul{
-  list-style: none;
-}
-
-.header{
-  background: rgb(8, 8, 57);
-  position: sticky;
-  top: 0;
-  height: 12%;
-  width: 100%;
-}
-
-.logo{
-  display: inline-block;
-  font-size: 50px;
-  margin-left: 25px;
-}
-.nav{
-  width: 100vw;
-  height: 60%;
-  position: fixed;
-  overflow: hidden;
-
-}
-.menu a{
-  
-  display: inline-block;
-  padding: 30px;
-  color:white;
-
-}
-.menu a:hover{
-  background-color: black;
-
-  padding: 7px;
-  border: none;
- ;
-}
-.nav{
-  max-height: 0;
-  transition: max-height .5s ease-out;
-  
-}
-.hamb{
- 
-  cursor: pointer;
-  float: right;
-  padding: 40px 20px;
-}
-
-.hamb-line {
-  background: black;
-  display: block;
-  height: 2px;
-  position: relative;
-  margin-right: 30px;
-  width: 24px;
-
-
-} /* Style span tag */
-
-.hamb-line::before,
-.hamb-line::after{
-  background: black;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-.hamb-line::before{
-  top: 5px;
-}
-.hamb-line::after{
-  top: -5px;
-}
-
-.side-menu {
-  display: none;
-} 
-.side-menu:checked ~ nav{
-  max-height: 100%;
-}
-.side-menu:checked ~ .hamb .hamb-line {
-  background: transparent;
-}
-.side-menu:checked ~ .hamb .hamb-line::before {
-  transform: rotate(-45deg);
-  top:0;
-}
-.side-menu:checked ~ .hamb .hamb-line::after {
-  transform: rotate(45deg);
-  top:0;
-}
- 
-@media (min-width: 768px) {
-  .nav{
-      max-height: none;
-      top: 0;
-      position: relative;
-      float: right;
-      width: fit-content;
-      background-color: transparent;
-  }
-  .menu li{
-      float: left;
-  }
-  .menu a:hover{
-      background-color: goldenrod;
-      padding: 7px;
-      border: none;
-
-
-  }
-
-  .hamb{
-      display: none;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.nav {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(19, 19, 78);
-}
-
-.nav ul {
-  display: flex;
-  list-style: none;
-}
-
-.nav li a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-}
-
-.nav li button {
-  color: white;
-  background-color: red;
-  border: none;
-  padding: 7px;
-  
-}
-.nav ul {
-  display: flex;
-  flex-direction: row; 
-  list-style: none;
- }
-.nav li:nth-child(-n+9) { 
-  order: 1; 
-  }
-  
-.nav li:nth-child(n+10) { 
-  order: 2; 
-  }
-.nav {
-    width:100%; 
- }
-.utile{
-  display: inline-block;
-  margin-left: 2%;
-}
-.container {
-  position: relative;
-  width: 55%;
-  top: 10px;
-  left: 2%;
-  border: 1px solid black;
-  padding: 10px;
-  grid-gap: 10px;
-}
-.container {
-  display: flex;
-  flex-direction: row;
-  }
-  
-  .col {
-  display: flex;
-  flex-direction: column;
-  }
-  
-  .liens, .div4, .div5 {
-  order: 1;
-  
-  }
-  .liens{
-    background: #fff;
-  }
-  
-  .profile {
-  order: 2;
-  }
-  
-  .photo, p {
-  order: 1;
-  margin-left: 32px;;
- 
-  }
-  
-.box {
-  display: flex;
-  flex-direction: column;
-  margin-top: 250px;
-  margin-right: 50px;
-  width: 250px;
-  border: 1px solid black;
-}
-@media screen and (max-width: 600px) {
-  .nav li:nth-child(n+5) {
-    display: none;
-  }
-  .nav ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav ul li {
-    display: block;
-    width: 100%;
-  }
-  
-  .nav ul li a {
-    display: block;
-    padding: 12px;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .nav ul li a:hover {
-    background-color: #eee;
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-}
-
-
-   
- 
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0px;
   font-family: 'segoe ui';
 }
 
 .nav {
   height: 50px;
   width: 100%;
-  background-color: rgb(17, 17, 66);
-  position: relative;
-}
-
-.nav > .nav-header {
-  display: inline;
-}
-
-.nav li {
-  display: inline-block;
-  font-size: 22px;
-  color: #fff;
-  padding: 10px 10px 10px 10px;
-  margin-left: 0%;
-}
-
-.nav > .nav-btn {
-  display:inline-block;
-}
-
-.nav > .nav-links {
-  display: inline;
-  float: right;
-  font-size: 18px;
-}
-
-.nav > .nav-links > a {
-  display: inline-block;
-
-  text-decoration: none;
-  color: #efefef;
-}
-
-.nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.nav > #nav-check {
-  display: none;
-}
-.nav-btn{
-  background-color: red;
-}
-.nav li:nth-child(-n+8) {
-  float: left;
-}
-
-.nav li:nth-child(n+9) {
-  display: flex;
-  flex-direction: row-reverse;
-  float: right;
-}
-.nav-header {
-  clear: both;
-}
-.nav li a{
-  color: white;
-}
-
-.nav > .nav-links > a {
-  color: white;
-}
-.nav li {
-  display: inline-block;
-}
-
-.nav > .nav-links > a {
-  display: inline-block;
-}
-.nav li {
-  font-size: 22px;
-}
-
-.nav > .nav-links > a {
-  font-size: 22px;
-}
-.nav > .nav-links > a:nth-child(4) {
-  background-color: #ff0000;
-}
-
-
-
-
-  
-
-
-
-/*@media (max-width:600px) {
-  .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
-  .nav > .nav-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: #333;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
-  }
-  .nav > .nav-links > a {
-    display: block;
-    width: 100%;
-  }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
-  }
-  .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-  }
-  
-  .nav li {
-    display: block;
-    float: none;
-  }
-  
-  .nav li:nth-child(1) {
-    display: flex;
-
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0px;
-  font-family: 'segoe ui';
-}
-
-.nav {
-  height: 50px;
-  width: 100%;
-  
+  background-color: rgb(10, 10, 49);
   position: relative;
 }
 
@@ -651,18 +39,39 @@ body {
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  color: white;
+  color: #efefef;
 }
 
-
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
 .nav > #nav-check {
   display: none;
 }
-.nav li{
-  display: inline-block;
-  
+.nav-title a {
+  color: white;
+  margin: 0 10px;
 }
+.btn{
+  color: white;
+  background: red;
+}
+.container{
+  border-width: 65%;
+  margin-left: 1%;
+  border: 1px solid black;
+}
+.col{
+  margin-left: 1%;
+}
+
+
+
+
+
+
+
 
 @media (max-width:600px) {
   .nav > .nav-btn {
@@ -671,6 +80,15 @@ body {
     right: 0px;
     top: 0px;
   }
+
+  .nav-title a:nth-of-type(1) {
+    display: none;
+  }
+  .nav-title a:nth-of-type(n+3) {
+    display: none;
+  }
+  
+
   .nav > .nav-btn > label {
     display: inline-block;
     width: 50px;
@@ -708,144 +126,94 @@ body {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
+.container{
+  border: none;
+  margin-left: 10%;
+}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.container {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .nav {
-    width: 100%;
-    display:inline-block;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(11, 11, 34);
-  }
-  
-  .nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-  }
-  
- 
-
-  
-  .nav a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-  }
-  
-  .utile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .utile ul {
-    list-style: none;
-  }
-  
-  .utile li {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* votre code CSS ici */
+  .nav > .nav-btn {
     display: inline-block;
-    margin-right: 15px;
-  }
-  
-  .utile a {
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
-  }
-  
-  .utile h1 {
-    font-size: 36px;
-    margin-bottom: 0;
-  }
-  
-  .utile h2 {
-    display: flex;
-    font-size: 24px;
-    font-weight: normal;
-    margin-top: 0;
-    text-align: center;
-  }
-  
-  .liens {
-    margin-top: 20px;
-  }
-  
-  .liens button {
-    background-color: gainsboro;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    font-size: 14px;
-    cursor: pointer;
-    margin-right: 15px;
-  }
-  
-  .liens a {
-    text-decoration: none;
-    color:black;
-  }
-  
-  .liens p {
-    margin-top: 20px;
-    font-size: 14px
+    position: absolute;
+    right: 0px;
+    top: 0px;
   }
 
-      
+  .nav-title a:nth-of-type(1) {
+    display: none;
+  }
+  .nav-title a:nth-of-type(n+3) {
+    display: none;
+  }
+  
 
-.div3{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr 2fr;
-   
-}
-.div4 { grid-area: 4 / 1 / 5 / 2; 
-    margin: 0;
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
     display: block;
-}
-.div5 { grid-area: 5 / 1 / 6 / 2; 
-    margin: 0;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
     display: block;
-    
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+.container{
+  border: none;
+  margin-left: 10%;
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
