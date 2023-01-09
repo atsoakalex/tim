@@ -4,7 +4,7 @@
 
 body {
   margin: 0px;
-  font-family: 'segoe ui';
+  font-family: 'Times New Roman';
 }
 
 .nav {
@@ -58,12 +58,20 @@ body {
   background: red;
 }
 .container{
-  border-width: 65%;
+  width: 55%;
   margin-left: 1%;
   border: 1px solid black;
 }
 .col{
   margin-left: 1%;
+}
+.profile{
+  float: right;
+  margin-right: 10%;
+  width: 30%;
+  border: 1px solid black;
+  align-items: center;
+  text-align: center;
 }
 
 
@@ -130,6 +138,13 @@ body {
   border: none;
   margin-left: 10%;
 }
+.profile{
+  display: block;
+  width: 85%;
+  border: 1px solid black;
+  align-items: center;
+  text-align: center;
+}
 }
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
@@ -189,6 +204,13 @@ body {
 .container{
   border: none;
   margin-left: 10%;
+}
+.profile{
+  display: block;
+  position: relative;
+  width: 75%;
+  border: 1px solid black;
+ text-align: center;
 }
 }
 
